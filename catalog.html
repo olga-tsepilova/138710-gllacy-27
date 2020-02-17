@@ -51,8 +51,8 @@
           <span class="navigation__user-name search__name">Поиск</span>
           <div class="search">
             <form class="search__form" method="post" action="https://echo.htmlacademy.ru/">
-              <label class="visually-hidden" for="search__text">Поиск о сайту</label>
-              <input class="search__field" id="search__text" type="text" placeholder="Крем-брюле">
+              <label class="visually-hidden" for="search-text">Поиск о сайту</label>
+              <input class="search__field" id="search-text" type="text" name="search" placeholder="Крем-брюле">
             </form>
           </div><!-- /search__box-->
         </li>
@@ -62,10 +62,10 @@
             <form class="entrance__form" method="post" action="https://echo.htmlacademy.ru/">
               <fieldset class="entrance__fields">
                 <label class="visually-hidden" for="entrance-email">Введите ваш email</label>
-                <input class="entrance__field" id="entrance-email" type="email" placeholder="email@example.com">
+                <input class="entrance__field" id="entrance-email"  name="login-email" type="email" placeholder="email@example.com">
 
                 <label class="visually-hidden" for="entrance-password">Введите ваш пароль</label>
-                <input class="entrance__field" id="entrance-password" type="password" placeholder="••••••••">
+                <input class="entrance__field" id="entrance-password" type="password" name="login-password" placeholder="&bull;&bull;&bull;&bull;&bull;&bull;&bull;&bull;">
               </fieldset>
               <div class="entrance__data">
                 <button class="entrance__button" type="submit">Войти</button>
@@ -83,7 +83,49 @@
             <span class="cart__info cart__info--fill">2 товара</span>
 
             <form class="cart__product-list" method="post" action="https://echo.htmlacademy.ru/">
+              <table class="cart__product-table">
+                <tr class="cart__product-row">
+                  <td class="cart__product-col">
+                    <button class="cart__product-col-delete" type="button" aria-label="Удалить товар из корзины"></button>
+                  </td>
+                  <td class="cart__product-col">
+                    <img class="cart__product-img" src="img/catalog/catalog-product-сreamy-orange-jam-citrus-shavings-min.png" width="33" height="33">
+                  </td>
+                  <td class="cart__product-col">
+                    <a class="cart__product-link" href="#">Пломбир с апельсиновым джемом</a>
+                  </td>
+                  <td class="cart__product-col">
+                    1,5 кг х <span class="cart__product-cost">200 руб.</span>
+                  </td>
+                  <td class="cart__product-col">
+                    300 руб.
+                  </td>
+                </tr>
 
+                <tr class="cart__product-row">
+                  <td class="cart__product-col">
+                    <button class="cart__product-col-delete" type="button" aria-label="Удалить товар из корзины"></button>
+                  </td>
+                  <td class="cart__product-col">
+                    <img class="cart__product-img" src="img/catalog/catalog-product-creamy-strawberry-with-white-chocolate-powder-min.png" width="33" height="33">
+                  </td>
+                  <td class="cart__product-col">
+                    <a class="cart__product-link" href="#">Пломбир с апельсиновым джемом</a>
+                  </td>
+                  <td class="cart__product-col">
+                    1,5 кг х <span class="cart__product-cost">300 руб.</span>
+                  </td>
+                  <td class="cart__product-col">
+                    450 руб.
+                  </td>
+                </tr>
+
+                <tr class="cart__product-row">
+                  <td class="cart__product-total" colspan="5">
+                    Итого: 750 руб.
+                  </td>
+                </tr>
+              </table>
 
               <button class="button" type="submit">Оформить заказ</button>
             </form>
@@ -106,19 +148,19 @@
       <h1 class="page__name">Сливочное мороженое</h1>
       <ul class="page__breadcrumbs">
         <li class="page__breadcrumbs-item">
-          <a class="page__breadcrumbs-link" href="index.html">Главная</a>
+          <a class="page__breadcrumbs-element" href="index.html">Главная</a>
         </li>
         <li class="page__breadcrumbs-item">
-          <a class="page__breadcrumbs-link" href="#">Каталог</a>
+          <a class="page__breadcrumbs-element" href="#">Каталог</a>
         </li>
         <li class="page__breadcrumbs-item">
-          <span class="page__breadcrumbs-current">Сливочное</span>
+          <span class="page__breadcrumbs-element page__breadcrumbs-element--current">Сливочное</span>
         </li>
       </ul>
     </header>
     <!-- /page__header -->
 
-    <form class="filter" method="post" action="https://echo.htmlacademy.ru/">
+    <form class="filter" method="get" action="https://echo.htmlacademy.ru/">
 
       <!-- Сортировка + цена -->
       <fieldset class="filter__field">
@@ -138,7 +180,7 @@
         <!-- Сортировка -->
         <label class="filter__item">
           <span class="filter__name">Цена: 100 руб. – 500 руб.</span>
-          <input type="range" min="100" max="500" value="1">
+          <input type="range" min="100" max="500" value="1" name="filter-range">
 
           <!--
           двойной слайдер на чистом js - варианты посмотреть
@@ -434,19 +476,18 @@
   <!-- /PAGE CONTENT -->
 
   <footer class="footer">
-    <section class="footer__data">
       <ul class="social">
         <li class="social__item">
-          <a class="social__link social__link--twitter" href="#">Глейси в twitter</a>
+          <a class="social__link social__link--twitter" href="#" aria-label="Глейси в twitter"></a>
         </li>
         <li class="social__item">
-          <a class="social__link social__link--instagram" href="#">Глейси в instagram</a>
+          <a class="social__link social__link--instagram" href="#" aria-label="Глейси в instagram"></a>
         </li>
         <li class="social__item">
-          <a class="social__link social__link--facebook" href="#">Глейси в facebook</a>
+          <a class="social__link social__link--facebook" href="#" aria-label="Глейси в facebook"></a>
         </li>
         <li class="social__item">
-          <a class="social__link social__link--vk" href="#">Глейси в VK</a>
+          <a class="social__link social__link--vk" href="#" aria-label="Глейси в VK"></a>
         </li>
       </ul>
       <!-- /social -->
@@ -474,9 +515,6 @@
         <p class="developer__description">Сделано в <a class="developer__link" href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a> © 2019</p>
       </div>
       <!-- /developer -->
-
-    </section>
-    <!-- /footer__data -->
   </footer>
 </body>
 </html>

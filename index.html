@@ -50,8 +50,8 @@
           <span class="navigation__user-name search__name">Поиск</span>
           <div class="search">
             <form class="search__form">
-              <label class="visually-hidden" for="search__text">Поиск о сайту</label>
-              <input class="search__field" id="search__text" type="text" placeholder="Крем-брюле">
+              <label class="visually-hidden" for="search-text">Поиск о сайту</label>
+              <input class="search__field" id="search-text" type="text" name="search" placeholder="Крем-брюле">
             </form>
           </div><!-- /search__box-->
         </li>
@@ -61,10 +61,10 @@
             <form class="entrance__form">
               <fieldset class="entrance__fields">
                 <label class="visually-hidden" for="entrance-email">Введите ваш email</label>
-                <input class="entrance__field" id="entrance-email" type="email" placeholder="email@example.com">
+                <input class="entrance__field" id="entrance-email" name="login-email" type="email" placeholder="email@example.com">
 
                 <label class="visually-hidden" for="entrance-password">Введите ваш пароль</label>
-                <input class="entrance__field" id="entrance-password" type="password" placeholder="••••••••">
+                <input class="entrance__field" id="entrance-password" name="login-password" type="password" placeholder="&bull;&bull;&bull;&bull;&bull;&bull;&bull;&bull;">
               </fieldset>
               <div class="entrance__data">
                 <button class="entrance__button" type="submit">Войти</button>
@@ -101,7 +101,7 @@
           <!-- item -->
           <div class="slider__item">
               <img class="slider__photo"
-                   src="img/slider/slider-1.png"
+                   src="img/slider/creme-brulee-and-ice-cream-with-raspberry-jam.png"
                    width="1045" height="881" alt="Крем-брюле и пломбир с малиновым джемом">
             <strong class="slider__title">Крем-брюле и пломбир с малиновым джемом</strong>
             <a class="slider__link" href="#">Давайте оба!</a>
@@ -111,7 +111,7 @@
           <!-- item -->
           <div class="slider__item">
             <img class="slider__photo"
-                 src="img/slider/slider-2.png"
+                 src="img/slider/chocolate-sundae-and-lemon-sorbet.png"
                  width="1045" height="881" alt="Шоколадный пломбир и лимонный сорбет">
             <strong class="slider__title">Шоколадный пломбир и лимонный сорбет </strong>
             <a class="slider__link" href="#">Давайте оба!</a>
@@ -121,7 +121,7 @@
           <!-- item -->
           <div class="slider__item">
             <img class="slider__photo"
-                 src="img/slider/slider-3.png"
+                 src="img/slider/ice-cream-with-fondant-and-strawberry-sorbet.png"
                  width="1045" height="881" alt="Пломбир с помадкой и клубничный щербет">
             <strong class="slider__title">Пломбир с помадкой и клубничный щербет</strong>
             <a class="slider__link" href="#">Давайте оба!</a>
@@ -140,6 +140,7 @@
     <section class="banners">
       <ul class="banners__list">
         <li class="banners__item banners__item--raspberries">
+          <h2 class="visually-hidden">Спецпредложение магазина Глэйси</h2>
           <strong class="banners__title">Малинка даром!</strong>
           <p class="banners__description">При покупке 2 кг любого фруктового мороженого, добавим в ваш заказ банку малинового варенья бесплатно.
           </p>
@@ -147,6 +148,7 @@
         </li>
 
         <li class="banners__item banners__item--chocolate">
+          <h2 class="visually-hidden">Спецпредложение магазина Глэйси</h2>
           <strong class="banners__title">Шоколадки даром!</strong>
           <p class="banners__description">При покупке 2 кг пломбира, добавим в ваш заказ упаковку вкуснейшей шоколадной присыпки совершенно бесплатно.</p>
           <a class="banners__link" href="#">Хочу шоколадки!</a>
@@ -230,20 +232,17 @@
     </section>
     <!-- /about-shop -->
 
-    <section class="blog">
-      <article class="blog__item">
-        <span class="blog_section">Новое в нашем блоге</span>
+    <section class="features">
+      <article class="blog">
+        <strong class="blog__section">Новое в нашем блоге</strong>
         <a class="blog__title"  href="#">10 способов сервировки фруктовых щербетов к столу</a>
       </article>
 
       <div class="subcribe">
         <p class="subcribe__description">Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =) </p>
         <form class="subcribe__form">
-          <fieldset class="subcribe__fields">
-            <input class="subcribe__contact" type="email" placeholder="email@example.com">
+            <input class="subcribe__contact" type="email" name="email" placeholder="email@example.com">
             <button class="button" type="submit">Отправить</button>
-          </fieldset>
-
         </form>
       </div>
     </section>
@@ -259,30 +258,14 @@
       <div class="address__info">
         <p class="address__data">Адрес главного офиса
           и офлайн-магазина:
-          <strong class="address__main-data"> ул. Большая Конюшенная 19/8, Санкт-Петербург</strong>
+          <address class="address__main-data"> ул. Большая Конюшенная 19/8, Санкт-Петербург</address>
         </p>
         <p class="address__info">
           Для заказов по телефону:
-          <strong class="address__main-data"> 8 812 450-25-25</strong>
+          <a class="address__main-data" href="tel:+88124502525"> 8 812 450-25-25</a>
           (с 10 до 20 ежедневно)
         </p>
         <a class="button" href="#">Форма обратной связи</a>
-
-        <div class="modal">
-          <span class="modal__close">Закрыть окно</span>
-
-          <form class="feedback">
-            <strong class="feedback__title">Мы обязательно вам ответим!</strong>
-            <fieldset class="feedback__fields">
-              <input class="feedback__line" type="text" placeholder="Имя Фамилия">
-              <input class="feedback__line" type="email" placeholder="email@example.com">
-            </fieldset>
-            <fieldset class="feedback__fields">
-              <textarea class="feedback__text" placeholder="В свободной форме"></textarea>
-            </fieldset>
-            <button class="button" type="submit">Отправить</button>
-          </form>
-        </div>
         <!-- /modal-->
 
       </div>
@@ -298,16 +281,16 @@
     <section class="footer__data">
       <ul class="social">
         <li class="social__item">
-          <a class="social__link social__link--twitter"  href="#">Глейси в twitter</a>
+          <a class="social__link social__link--twitter" href="#" aria-label="Глейси в twitter"></a>
         </li>
         <li class="social__item">
-          <a class="social__link social__link--instagram"  href="#">Глейси в instagram</a>
+          <a class="social__link social__link--instagram" href="#" aria-label="Глейси в instagram"></a>
         </li>
         <li class="social__item">
-          <a class="social__link social__link--facebook"  href="#">Глейси в facebook</a>
+          <a class="social__link social__link--facebook" href="#" aria-label="Глейси в facebook"></a>
         </li>
         <li class="social__item">
-          <a class="social__link social__link--vk"  href="#">Глейси в VK</a>
+          <a class="social__link social__link--vk" href="#" aria-label="Глейси в VK"></a>
         </li>
       </ul>
       <!-- /social -->
@@ -340,5 +323,22 @@
     <!-- /footer__data -->
   </footer>
 
+
+  <!-- модалка - обратная связь -->
+  <div class="modal">
+    <button class="modal__close" aria-label="Закрыть окно"></button>
+
+    <form class="feedback">
+      <strong class="feedback__title">Мы обязательно вам ответим!</strong>
+      <fieldset class="feedback__fields">
+        <input class="feedback__line" type="text" name="feedback-fio" placeholder="Имя Фамилия">
+        <input class="feedback__line" type="email" name="feedback-email" placeholder="email@example.com">
+      </fieldset>
+      <fieldset class="feedback__fields">
+        <textarea class="feedback__text" placeholder="В свободной форме"></textarea>
+      </fieldset>
+      <button class="button" type="submit">Отправить</button>
+    </form>
+  </div>
   </body>
 </html>
