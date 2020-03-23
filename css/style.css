@@ -1190,7 +1190,7 @@ body {
   content: "";
   display: flex;
   position: absolute;
-  width: 100%;
+  width: 293px;
   top: -6px;
   left: -14px;
   right: -14px;
@@ -1204,7 +1204,7 @@ body {
 .catalog__item:hover::after,
 .catalog__item:active::after,
 .catalog__item:focus::after {
-  bottom: -50px;
+  bottom: -83px;
   background-color: #f8f7f4;
   opacity: 0.2;
   box-shadow: 0 20px 20px 0 rgba(0, 0, 0, 0.4);
@@ -1264,7 +1264,7 @@ body {
 
 .catalog__quick-view {
   position: absolute;
-  bottom: -30px;
+  bottom: -62px;
   right: 0;
   left: 0;
   width: 200px;
@@ -1306,7 +1306,9 @@ body {
   width: 100%;
   align-items: flex-end;
   justify-content: flex-end;
+  margin: 43px 0 30px;
   list-style: none;
+
 }
 
 .pagination__item {
@@ -1341,11 +1343,34 @@ body {
 }
 
 .pagination__arrow {
+  position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 0 10px 0 0;
+  width: 27px;
+  height: 26px;
+  padding: 0 0 0 10px;
 }
+
+.pagination__arrow::before {
+  content: "";
+  width: 8px;
+  height: 12px;
+
+  background: url("../img/icon/icon-right-small.svg") no-repeat center;
+  background-size: 8px 12px;
+
+  opacity: 1;
+}
+
+.pagination__arrow--back {
+  transform: rotate(182deg); 
+}
+
+.pagination__arrow--disabled {
+  opacity: 0.2;
+}
+
 
 /* ===== PAGE TITLE===== */
 .page__header {
