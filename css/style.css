@@ -1364,7 +1364,7 @@ body {
 }
 
 .pagination__arrow--back {
-  transform: rotate(182deg); 
+  transform: rotate(180deg);
 }
 
 .pagination__arrow--disabled {
