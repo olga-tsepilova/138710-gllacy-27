@@ -7,15 +7,11 @@
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
-
-
-
-
     <input class="visually-hidden" type="radio" id="slider-1" name="slider-item-toggle" checked>
     <input class="visually-hidden" type="radio" id="slider-2" name="slider-item-toggle">
     <input class="visually-hidden" type="radio" id="slider-3" name="slider-item-toggle">
 
-     <div class="content-wrapper">
+    <div class="content-wrapper">
       <header class="header">
         <div class="logo">
           <img class="logo__img" src="img/logo.svg" width="154" height="64" alt="логотип Глэйси">
@@ -106,47 +102,39 @@
       <main class="page">
 
         <section class="slider">
-            <div class="slider__wrapper">
-              <!-- item -->
-              <div class="slider__item" id="slider__item-1">
-                  <img class="slider__photo"
-                       src="img/slider/creme-brulee-and-ice-cream-with-raspberry-jam.png"
-                       width="1045" height="881"
-                       alt="Крем-брюле и пломбир с малиновым джемом">
-                <strong class="slider__title">Крем-брюле и пломбир с малиновым джемом</strong>
-                <a class="button slider__link" href="#">Давайте оба!</a>
-              </div>
-              <!-- /item -->
-
-              <!-- item -->
-              <div class="slider__item" id="slider__item-2">
-                <img class="slider__photo"
-                     src="img/slider/chocolate-sundae-and-lemon-sorbet.png"
-                     width="1045" height="881"
-                     alt="Шоколадный пломбир и лимонный сорбет">
-                <strong class="slider__title">Шоколадный пломбир и лимонный сорбет </strong>
-                <a class="button slider__link" href="#">Давайте оба!</a>
-              </div>
-              <!-- /item -->
-
-              <!-- item -->
-              <div class="slider__item" id="slider__item-3">
-                <img class="slider__photo"
-                     src="img/slider/ice-cream-with-fondant-and-strawberry-sorbet.png"
-                     width="1045" height="881"
-                     alt="Пломбир с помадкой и клубничный щербет">
-                <strong class="slider__title">Пломбир с помадкой и клубничный щербет</strong>
-                <a class="button slider__link" href="#">Давайте оба!</a>
-              </div>
-              <!-- /item -->
-
+          <div class="slider__wrapper">
+            <!-- item -->
+            <div class="slider__item" id="slider__item-1">
+              <img class="slider__photo" src="img/slider/creme-brulee-and-ice-cream-with-raspberry-jam.png" width="1045" height="881" alt="Крем-брюле и пломбир с малиновым джемом">
+              <strong class="slider__title">Крем-брюле и пломбир с малиновым джемом</strong>
+              <a class="button slider__link" href="#">Давайте оба!</a>
             </div>
-            <div class="slider__controls">
-              <label class="slider__controls-item" aria-label="Выбрать слайд Крем-брюле и пломбир с малиновым джемом" for="slider-1"></label>
-              <label class="slider__controls-item" aria-label="Выбрать слайд Шоколадный пломбир и лимонный сорбет" for="slider-2"></label>
-              <label class="slider__controls-item" aria-label="Выбрать слайд Пломбир с помадкой и клубничный щербет" for="slider-3"></label>
+            <!-- /item -->
+
+            <!-- item -->
+            <div class="slider__item" id="slider__item-2">
+              <img class="slider__photo" src="img/slider/chocolate-sundae-and-lemon-sorbet.png" width="1045" height="881" alt="Шоколадный пломбир и лимонный сорбет">
+              <strong class="slider__title">Шоколадный пломбир и лимонный сорбет </strong>
+              <a class="button slider__link" href="#">Давайте оба!</a>
             </div>
-          </section>
+            <!-- /item -->
+
+            <!-- item -->
+            <div class="slider__item" id="slider__item-3">
+              <img class="slider__photo" src="img/slider/ice-cream-with-fondant-and-strawberry-sorbet.png" width="1045" height="881" alt="Пломбир с помадкой и клубничный щербет">
+              <strong class="slider__title">Пломбир с помадкой и клубничный щербет</strong>
+              <a class="button slider__link" href="#">Давайте оба!</a>
+            </div>
+            <!-- /item -->
+
+            </div><!-- /slider__wrapper -->
+
+          <div class="slider__controls">
+            <label class="slider__controls-item" aria-label="Выбрать слайд Крем-брюле и пломбир с малиновым джемом" for="slider-1"></label>
+            <label class="slider__controls-item" aria-label="Выбрать слайд Шоколадный пломбир и лимонный сорбет" for="slider-2"></label>
+            <label class="slider__controls-item" aria-label="Выбрать слайд Пломбир с помадкой и клубничный щербет" for="slider-3"></label>
+          </div><!-- /slider__controls-->
+        </section>
         <!-- /slider-->
 
         <section class="banners">
@@ -173,10 +161,7 @@
           <ul class="catalog__list">
             <li class="catalog__item catalog__item--bestseller" aria-label="хит продаж">
               <div class="catalog__img-wrapper">
-                <img class="catalog__photo"
-                     src="img/catalog/catalog-product-creamy-with-orange-jam-and-citrus-shavings.png"
-                     width="267" height="267"
-                     alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
+                <img class="catalog__photo" src="img/catalog/catalog-product-creamy-with-orange-jam-and-citrus-shavings.png" width="267" height="267" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
               </div>
               <div class="catalog__price">310 ₽<span class="catalog__price-weight">/кг</span></div>
               <h2 class="catalog__title">
@@ -189,10 +174,7 @@
 
             <li class="catalog__item catalog__item--bestseller" aria-label="хит продаж">
               <div class="catalog__img-wrapper">
-                <img class="catalog__photo"
-                     src="img/catalog/catalog-product-creamy-coffee-with-pieces-of-chocolate.png"
-                     width="267" height="267"
-                     alt="Сливочно-кофейное с кусочками шоколада">
+                <img class="catalog__photo" src="img/catalog/catalog-product-creamy-coffee-with-pieces-of-chocolate.png" width="267" height="267" alt="Сливочно-кофейное с кусочками шоколада">
               </div>
               <div class="catalog__price">380 ₽<span class="catalog__price-weight">/кг</span></div>
               <h2 class="catalog__title">
@@ -205,10 +187,7 @@
 
             <li class="catalog__item catalog__item--bestseller" aria-label="хит продаж">
               <div class="catalog__img-wrapper">
-                <img class="catalog__photo"
-                     src="img/catalog/catalog-product-creamy-strawberry-with-white-chocolate-powder.png"
-                     width="267" height="267"
-                     alt="Сливочно-клубничное с присыпкой из белого шоколада">
+                <img class="catalog__photo" src="img/catalog/catalog-product-creamy-strawberry-with-white-chocolate-powder.png" width="267" height="267" alt="Сливочно-клубничное с присыпкой из белого шоколада">
               </div>
               <div class="catalog__price">355 ₽<span class="catalog__price-weight">/кг</span></div>
               <h2 class="catalog__title">
@@ -222,10 +201,7 @@
 
             <li class="catalog__item catalog__item--bestseller" aria-label="хит продаж">
               <div class="catalog__img-wrapper">
-                <img class="catalog__photo"
-                     src="img/catalog/catalog-product-creme-brulee-cream-with-caramel-sauce.png"
-                     width="267" height="267"
-                     alt="Сливочное крем-брюле с карамельной подливкой">
+                <img class="catalog__photo" src="img/catalog/catalog-product-creme-brulee-cream-with-caramel-sauce.png" width="267" height="267" alt="Сливочное крем-брюле с карамельной подливкой">
               </div>
               <div class="catalog__price">415 ₽<span class="catalog__price-weight">/кг</span></div>
               <h2 class="catalog__title">
@@ -263,9 +239,8 @@
           <div class="subcribe">
             <form class="subcribe__form">
               <p class="subcribe__description">Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =) </p>
-
-                <input class="form-input subcribe__contact" type="email" name="email" placeholder="email@example.com">
-                <button class="button subcribe__button" type="submit">Отправить</button>
+              <input class="form-input subcribe__contact" type="email" name="email" placeholder="email@example.com">
+              <button class="button subcribe__button" type="submit">Отправить</button>
             </form>
           </div>
         </section>
@@ -274,10 +249,7 @@
       <!-- /PAGE -->
 
       <section class="address">
-        <img class="address__map"
-             src="img/map.jpg"
-             width="1200" height="430"
-             alt="карта проезда к магазину Глэйси">
+        <img class="address__map" src="img/map.jpg" width="1200" height="430" alt="карта проезда к магазину Глэйси">
 
         <div class="address__wrapper">
           <div class="address__info">
