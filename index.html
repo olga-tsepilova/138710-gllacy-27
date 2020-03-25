@@ -7,6 +7,10 @@
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
+  <div style="display:none;display: block;opacity: 0.4;width: 100%;height: 100%;position: absolute; top: 0; left: 0;z-index: 1000">
+    <img src="img/pp-gllacy-index.jpg" style="display: block; margin: 0 auto; ">
+  </div>
+
     <input class="visually-hidden" type="radio" id="slider-1" name="slider-item-toggle" checked>
     <input class="visually-hidden" type="radio" id="slider-2" name="slider-item-toggle">
     <input class="visually-hidden" type="radio" id="slider-3" name="slider-item-toggle">
@@ -14,7 +18,9 @@
     <div class="content-wrapper">
       <header class="header">
         <div class="logo">
-          <img class="logo__img" src="img/logo.svg" width="154" height="64" alt="логотип Глэйси">
+          <a href="index.html">
+            <img class="logo__img" src="img/logo.svg" width="154" height="64" alt="логотип Глэйси">
+          </a>
         </div>
 
         <nav class="navigation">
@@ -332,29 +338,6 @@
     </div>
     <!-- /content-wrapper -->
 
-    <script>
-      var link = document.querySelector(".address__feedback");
-      var popup = document.querySelector(".modal");
-      var close = popup.querySelector(".modal__close");
-
-      link.addEventListener("click", function (evt) {
-        evt.preventDefault();
-        popup.classList.add("modal--show");
-      });
-
-      close.addEventListener("click", function (evt) {
-        evt.preventDefault();
-        popup.classList.remove("modal--show");
-      });
-
-      window.addEventListener("keydown", function (evt) {
-        if (evt.keyCode === 27) {
-          evt.preventDefault();
-          if (popup.classList.contains("modal--show")) {
-            popup.classList.remove("modal--show");
-          }
-        }
-      });
-    </script>
+    <script src="js/script.js"></script>
   </body>
 </html>

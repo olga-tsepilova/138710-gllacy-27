@@ -3,27 +3,27 @@
   font-family: Roboto;
   font-style: normal;
   font-weight: 400;
-  src: local('Roboto'), local('Roboto-Regular'),
-  url('../fonts/roboto-v20-latin-cyrillic-regular.woff2') format('woff2'),
-  url('../fonts/roboto-v20-latin-cyrillic-regular.woff') format('woff');
+  src: local("Roboto"), local("Roboto-Regular"),
+  url("../fonts/roboto-v20-latin-cyrillic-regular.woff2") format("woff2"),
+  url("../fonts/roboto-v20-latin-cyrillic-regular.woff") format("woff");
 }
 
 @font-face {
   font-family: Roboto;
   font-style: normal;
   font-weight: 500;
-  src: local('Roboto Medium'), local('Roboto-Medium'),
-  url('../fonts/roboto-v20-latin-cyrillic-500.woff2') format('woff2'),
-  url('../fonts/roboto-v20-latin-cyrillic-500.woff') format('woff');
+  src: local("Roboto Medium"), local("Roboto-Medium"),
+  url("../fonts/roboto-v20-latin-cyrillic-500.woff2") format("woff2"),
+  url("../fonts/roboto-v20-latin-cyrillic-500.woff") format("woff");
 }
 
 @font-face {
   font-family: Robot;
   font-style: normal;
   font-weight: 700;
-  src: local('Roboto Bold'), local('Roboto-Bold'),
-  url('../fonts/roboto-v20-latin-cyrillic-700.woff2') format('woff2'),
-  url('../fonts/roboto-v20-latin-cyrillic-700.woff') format('woff');
+  src: local("Roboto Bold"), local("Roboto-Bold"),
+  url("../fonts/roboto-v20-latin-cyrillic-700.woff2") format("woff2"),
+  url("../fonts/roboto-v20-latin-cyrillic-700.woff") format("woff");
 }
 
 body {
@@ -596,7 +596,7 @@ body {
 .social {
   display: flex;
   flex-wrap: wrap;
-  padding: 8px 0 0;
+  padding: 14px 0 0 2px;
   max-width: 25%;
   list-style-type: none;
 }
@@ -691,7 +691,7 @@ body {
   content: "";
   display: block;
   position: absolute;
-  top: 0;
+  top: 3px;
   left: -22px;
   width: 15px;
   height: 13px;
@@ -926,11 +926,12 @@ body {
   flex-direction: column;
   min-height: 306px;
   padding: 24px 21px 0;
+  margin-top: -9px;
 
   font-size: 16px;
   line-height: 1.38;
 
-  background: url("../img/about-shop-bg.png") repeat top center;
+  background: #E5D5B0 url("../img/about-shop-bg.png") repeat top center;
   border-radius: 15px;
 }
 
@@ -953,7 +954,7 @@ body {
 
 .about-shop__advantages-item {
   width: 50%;
-  margin-bottom: 8px;
+  margin-bottom: 10px;
   padding-top: 13px;
   padding-left: 55px;
 }
@@ -993,8 +994,8 @@ body {
   display: flex;
   flex-direction: column;
   width: 560px;
-  height: 220px;
-  padding: 23px 20px;
+  min-height: 220px;
+  padding: 23px 20px 0;
 
   font-size: 16px;
   font-weight: 500;
@@ -1030,7 +1031,7 @@ body {
   display: flex;
   flex-direction: column;
   width: 560px;
-  height: 220px;
+  min-height: 220px;
 
   padding: 4px 5px 5px 6px;
 
@@ -1124,7 +1125,7 @@ body {
   flex-direction: column;
   width: 302px;
   height: 305px;
-  padding: 27px 25px 32px;
+  padding: 30px 25px 32px;
 
   font-size: 14px;
   line-height: 1.43;
@@ -1248,7 +1249,7 @@ body {
   min-height: 50px;
   overflow: hidden;
   margin-top: 25px;
-  padding: 0 10px;
+  padding: 0 8px;
 
   font-size: 16px;
   font-weight: normal;
