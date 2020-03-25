@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <title>Каталог мороженого | Глэйси — продажа мороженого собственного производства на развес</title>
-  <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/normalize-min.css">
+  <link rel="stylesheet" href="css/style-min.css">
 </head>
 <body>
   <div class="content-wrapper">
@@ -186,12 +186,12 @@
             <span class="filter__name">Цена: 100 руб. – 500 руб.</span>
             <span class="filter__range">
               <span class="filter__bar-wrapper">
-                <span class="filter__bar" style="margin-left: 20%; width: 30%"></span>
+                <span class="filter__bar" style="margin-left: 20%; width: 50%"></span>
               </span>
 
               <span class="filter__toggle-wrapper">
-                <span class="filter__toggle filter__toggle--min" style="left: 20%;" aria-label="минимальная цена"></span>
-                <span class="filter__toggle filter__toggle--max" style="left: 40%;" aria-label="максимальная цена"></span>
+                <span class="filter__toggle filter__toggle--min" style="left: 10.5%;" aria-label="минимальная цена"></span>
+                <span class="filter__toggle filter__toggle--max" style="left: 50%;" aria-label="максимальная цена"></span>
               </span>
             </span>
           </label>
@@ -262,7 +262,7 @@
             <li class="filter__item">
               <label class="filter__item filter__item--checkbox">
                 <input class="filter__checkbox" type="checkbox" name="fillers" value="syrup">
-                <span class="filter__checkbox-name">сироп</span>
+                <span class="filter__checkbox-name">сиропы</span>
               </label>
             </li>
             <li class="filter__item">
@@ -282,7 +282,7 @@
 
       <section class="catalog">
         <ul class="catalog__list">
-          <li class="catalog__item catalog__item--bestseller" aria-label="хит продаж">
+          <li class="catalog__item">
             <div class="catalog__img-wrapper">
               <img class="catalog__photo" src="img/catalog/catalog-product-creamy-with-orange-jam-and-citrus-shavings.png" width="267" height="267" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
             </div>
@@ -295,7 +295,7 @@
             <a class="button catalog__quick-view" href="#">Быстрый просмотр</a>
           </li>
 
-          <li class="catalog__item catalog__item--bestseller" aria-label="хит продаж">
+          <li class="catalog__item">
             <div class="catalog__img-wrapper">
               <img class="catalog__photo" src="img/catalog/catalog-product-creamy-coffee-with-pieces-of-chocolate.png" width="267" height="267" alt="Сливочно-кофейное с кусочками шоколада">
             </div>
@@ -308,7 +308,7 @@
             <a class="button catalog__quick-view" href="#">Быстрый просмотр</a>
           </li>
 
-          <li class="catalog__item catalog__item--bestseller" aria-label="хит продаж">
+          <li class="catalog__item">
             <div class="catalog__img-wrapper">
               <img class="catalog__photo" src="img/catalog/catalog-product-creamy-strawberry-with-white-chocolate-powder.png" width="267" height="267" alt="Сливочно-клубничное с присыпкой из белого шоколада">
             </div>
@@ -322,7 +322,7 @@
 
           </li>
 
-          <li class="catalog__item catalog__item--bestseller" aria-label="хит продаж">
+          <li class="catalog__item">
             <div class="catalog__img-wrapper">
               <img class="catalog__photo" src="img/catalog/catalog-product-creme-brulee-cream-with-caramel-sauce.png" width="267" height="267" alt="Сливочное крем-брюле с карамельной подливкой">
             </div>
@@ -395,7 +395,7 @@
 
             <h2 class="catalog__title">
               <a class="catalog__link" href="#">
-                Сливочно-ванильное с кусочками шоколада
+                Сливочно-ванильное <br> с кусочками шоколада
               </a>
             </h2>
             <a class="button catalog__quick-view" href="#">Быстрый просмотр</a>
@@ -442,7 +442,7 @@
         </ul>
 
         <ul class="pagination">
-          <li class="pagination__item pagination__item--arrow">
+          <li>
             <span class="pagination__arrow pagination__arrow--back pagination__arrow--disabled" aria-label="Переход на предыдущую страницу"></span>
           </li>
 
@@ -463,7 +463,7 @@
           </li>
 
           <li>
-            <a class="pagination__arrow" href="#" aria-label="Переход на следующую страницу"></a>
+            <a class="pagination__arrow pagination__arrow--next" href="#" aria-label="Переход на следующую страницу"></a>
           </li>
         </ul>
       </section>
@@ -517,6 +517,6 @@
   </div>
   <!-- /content-wrapper -->
 
-  <script src="js/script.js"></script>
+  <script src="js/script-min.js"></script>
 </body>
 </html>

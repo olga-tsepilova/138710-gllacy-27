@@ -3,14 +3,10 @@
   <head>
     <meta charset="utf-8">
     <title>Глэйси — продажа мороженого собственного производства на развес</title>
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/normalize-min.css">
+    <link rel="stylesheet" href="css/style-min.css">
   </head>
   <body>
-  <div style="display:none;display: block;opacity: 0.4;width: 100%;height: 100%;position: absolute; top: 0; left: 0;z-index: 1000">
-    <img src="img/pp-gllacy-index.jpg" style="display: block; margin: 0 auto; ">
-  </div>
-
     <input class="visually-hidden" type="radio" id="slider-1" name="slider-item-toggle" checked>
     <input class="visually-hidden" type="radio" id="slider-2" name="slider-item-toggle">
     <input class="visually-hidden" type="radio" id="slider-3" name="slider-item-toggle">
@@ -255,8 +251,10 @@
       <!-- /PAGE -->
 
       <section class="address">
-        <img class="address__map" src="img/map.jpg" width="1200" height="430" alt="карта проезда к магазину Глэйси">
-
+        <!--<img class="address__map" src="img/map.jpg" width="1200" height="430" alt="карта проезда к магазину Глэйси">-->
+       <div class="address__map">
+         <iframe src="https://yandex.ua/map-widget/v1/?um=constructor%3Ab2a66fb35da0262e6a66f289012a17bb8fb0894c3ddb314d8b594ae093965ad6&amp;source=constructor" width="100%" height="430" frameborder="0"></iframe>
+       </div>
         <div class="address__wrapper">
           <div class="address__info">
             <div class="address__data">Адрес главного офиса<br>
@@ -328,7 +326,7 @@
           <fieldset class="feedback__fields">
             <input class="form-input feedback__line" type="text" name="feedback-fio" placeholder="Имя Фамилия">
             <input class="form-input feedback__line" type="email" name="feedback-email" placeholder="email@example.com">
-            <textarea class="form-input feedback__text" placeholder="В свободной форме"></textarea>
+            <textarea class="form-input feedback__text" placeholder="В свободной форме" name="feedback-text"></textarea>
           </fieldset>
           <button class="button feedback__button" type="submit">Отправить</button>
         </form>
@@ -338,6 +336,6 @@
     </div>
     <!-- /content-wrapper -->
 
-    <script src="js/script.js"></script>
+    <script src="js/script-min.js"></script>
   </body>
 </html>
